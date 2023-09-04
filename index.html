@@ -30,13 +30,13 @@
 </head>
 
 <body>
-  <header class="mx-auto px-10 bg-[#FFFBF0] ">
-    <nav>
-      <div class="navbar">
-        <div class="flex-1 ">
-          <a class="btn btn-ghost normal-case text-xl"><img src="icons/logo.png" alt="" class="w-52"></a>
-        </div>
-        <div class="flex-none font-roboto font-medium">
+  <header class="bg-[#FFFBF0] ">
+    <div class="navbar">
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl"><img src="icons/logo.png" alt="" class=" w-32 md:w-48 lg:w-52"></a>      </div>
+      
+      <div class="flex-none ">
+        <div class="flex-none font-roboto font-medium hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
             <li><a>Product</a></li>
@@ -44,17 +44,30 @@
             <li><a>Contact us</a></li>
           </ul>
         </div>
+        <div class="dropdown">
+
+          <button class="btn btn-square btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+          <ul tabindex="0" class="menu menu-sm absolute mt-3 z-[1] py-2 dropdown-content right-0 shadow bg-base-100 rounded-box w-28">
+            <li><a>Home</a></li>
+            <li><a>Product</a></li>
+            <li><a>About us</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+    
+        </div>
       </div>
-    </nav>
+    </div>
     <section>
-      <div class="hero min-h-screen">
-        <div class="hero-content flex-col lg:flex-row-reverse mx-20 gap-48 ">
-          <img src="/images/model.png" class="max-w-sm rounded-lg flex-1" />
-          <div class="">
-            <h1 class="text-7xl font-bold text-[#363958] tracking-wide font-bebas"><span class="text-[#FABE4C]">Be the
+      <div class="">
+        <div class="hero-content flex-col lg:flex-row-reverse lg:mx-20 gap-20 lg:gap-48 ">
+          <img src="/images/model.png" class="max-w-xs md:max-w-sm rounded-lg flex-1 px-10 md:px-0" />
+          <div class=" md:text-center lg:text-left md:px-36 lg:px-0">
+            <h1 class="text-5xl md:text-7xl font-bold text-[#363958] tracking-wide font-bebas lg:pr-10"><span class="text-[#FABE4C]">Be the
                 Penguins</span>
               of Winter</h1>
-            <p class="py-3 pr-10 text-[#3E3E3E] font-roboto ">Lorem Ipsum is simply dummy text of the printing and
+            <p class="py-3 pr-0 lg:pr-10  text-[#3E3E3E] font-roboto ">Lorem Ipsum is simply dummy text of the printing and
               typesetting
               industry.</p>
             <button class="btn bg-gradient font-medium text-white rounded-lg font-roboto px-6"><img
@@ -66,8 +79,8 @@
   </header>
   <main>
     <section class="mt-20 max-w-[1200px] mx-auto">
-      <h3 class="text-5xl font-bold text-[#363958] tracking-wide font-bebas ml-24">W0Man Jacket</h3>
-      <div class="grid grid-cols-3 mx-20 gap-4 mt-10">
+      <h3 class="text-5xl font-bold text-[#363958] tracking-wide font-bebas text-center md:text-left md:ml-10 lg:ml-24">W0Man Jacket</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 lg:mx-20 gap-4 mt-10">
         <div class="card bg-base-100 shadow-xl ">
           <figure class=" pt-10 bg-[#7f7f7f91] m-4">
             <img src="/images/jacket-1.png" alt="Shoes" class="rounded-xl max-h-60" />
@@ -116,8 +129,8 @@
       </div>
     </section>
     <section class="mt-20 max-w-[1200px] mx-auto">
-      <h3 class="text-5xl font-bold text-[#363958] tracking-wide font-bebas ml-24">Man Jacket</h3>
-      <div class="grid grid-cols-3 mx-20 gap-4 mt-10">
+      <h3 class="text-5xl font-bold text-[#363958] tracking-wide font-bebas text-center md:text-left md:ml-10 lg:ml-24">Man Jacket</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-3 lg:mx-20 gap-4 mt-10">
         <div class="card bg-base-100 shadow-xl ">
           <figure class=" pt-10 bg-[#7f7f7f91] m-4">
             <img src="/images/jacket-4.png" alt="Shoes" class="rounded-xl max-h-60" />
@@ -166,9 +179,9 @@
       </div>
     </section>
     <section class="mt-20 max-w-[1200px] mx-auto mb-20">
-      <div class="flex mx-20 gap-4 mt-10 flex-row items-center justify-center">
-        <div class="w-[50%] flex flex-col gap-4 ">
-          <div class=" bg-base-100 shadow-xl flex flex-row items-center justify-center gap-4 p-4 mr-28">
+      <div class="flex flex-col-reverse mx-0 lg:mx-20 gap-4 mt-10 lg:flex-row items-center justify-center">
+        <div class="w-[90%] lg:w-[50%] flex flex-col gap-4 ">
+          <div class=" bg-base-100 shadow-xl flex md:flex-row flex-col  items-center justify-center gap-4 p-4 mr-0 lg:mr-28">
             <img src="/icons/house.png" alt="Shoes" class="rounded-xl max-h-16" />
             <div class="items-start">
               <h2 class="card-title text-2xl font-semibold text-[#363958]">Find the Perfect Fit</h2>
@@ -176,7 +189,7 @@
                 offer styles for every body.</p>
             </div>
           </div>
-          <div class=" bg-base-100 shadow-xl flex flex-row items-center justify-center gap-4 p-4 mr-28">
+          <div class=" bg-base-100 shadow-xl flex md:flex-row flex-col items-center justify-center gap-4 p-4 mr-0 lg:mr-28">
             <img src="/icons/box.png" alt="Shoes" class="rounded-xl max-h-16" />
             <div class="items-start">
               <h2 class="card-title text-2xl font-semibold text-[#363958]">Free Exchanges</h2>
@@ -184,16 +197,16 @@
                 with peace of mind.</p>
             </div>
           </div>
-          <div class=" bg-base-100 shadow-xl flex flex-row items-center justify-center gap-4 p-4 mr-28">
+          <div class=" bg-base-100 shadow-xl flex md:flex-row flex-colitems-center justify-center gap-4 p-4 mr-0 lg:mr-28">
             <img src="/icons/question.png" alt="Shoes" class="rounded-xl max-h-16" />
             <div class="items-start">
               <h2 class="card-title text-2xl font-semibold text-[#363958]">Contact Our Seller</h2>
-              <p class="text-[#3E3E3E] text-sm pr-5">They are here to help you. That's quite 
+              <p class="text-[#3E3E3E] text-sm pr-5">They are here to help you. That's quite
                 literally what we pay them for.</p>
             </div>
           </div>
         </div>
-        <div class="w-[50%]">
+        <div class="w-[90%] lg:w-[50%]">
           <img src="images/shopping.png" alt="">
         </div>
       </div>
